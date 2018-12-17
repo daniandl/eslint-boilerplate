@@ -1,21 +1,31 @@
 module.exports = {
-  extends: [
-    'standard',
-    'prettier',
-    'prettier/standard',
-    'plugin:vue/recommended'
-  ],
-  plugins: ['import', 'prettier', 'standard', 'vue'],
-  parserOptions: {
-    ecmaVersion: 2017
-  },
+  root: true,
   env: {
-    node: true,
-    es6: true
+    browser: true
+  },
+  globals: {
+    expect: true
+  },
+  extends: [
+    'airbnb-base',
+    'plugin:vue/recommended',
+    'prettier',
+    'prettier/vue'
+  ],
+  plugins: ['prettier', 'vue'],
+  parserOptions: {
+    sourceType: 'module'
   },
   rules: {
-    'space-before-function-paren': 0,
-    'new-cap': 0,
-    'prettier/prettier': 1
+    'vue/max-attributes-per-line': [
+      'error',
+      {
+        singleline: 4,
+        multiline: {
+          max: 1,
+          allowFirstLine: true
+        }
+      }
+    ]
   }
 }

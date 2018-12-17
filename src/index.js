@@ -1,5 +1,7 @@
 // You can use this file to test your the linter/formatter.
 
+;(test => test)('ree')
+
 export default {
   state: {
     authenticated: false,
@@ -17,7 +19,7 @@ export default {
 
         this.state.authenticated = !!user
         this.state.user = user
-        resolve(this.state)
+        return resolve(this.state)
       })
     })
   },
