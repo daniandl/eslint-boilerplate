@@ -1,7 +1,7 @@
 module.exports = {
   extends: [
     'stylelint-config-wordpress/scss',
-    './node_modules/prettier-stylelint/config.js'
+    'prettier-stylelint/config.js'
   ],
   plugins: 'stylelint-order',
   ignoreFiles: ['/**/*.vue'],

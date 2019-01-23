@@ -3,7 +3,7 @@
   "scripts": {},
   "dependencies": {},
   "devDependencies": {
-    "autoprefixer": "^9.4.0",
+		"babel-eslint": "^10.0.1",
     "eslint": "^5.10.0",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-config-prettier": "^3.3.0",

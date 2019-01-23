@@ -1,20 +1,19 @@
 module.exports = {
   root: true,
   env: {
-    browser: true
+    node: true
   },
   globals: {
     expect: true
   },
   extends: [
     'airbnb-base',
-    'plugin:vue/recommended',
     'prettier',
-    'prettier/vue'
   ],
-  plugins: ['prettier', 'vue'],
+  plugins: ['prettier'],
   parserOptions: {
-    sourceType: 'module'
+    sourceType: 'module',
+    parser: 'babel-eslint'
   },
   rules: {
     'vue/max-attributes-per-line': [
